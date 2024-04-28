@@ -50,7 +50,8 @@ The maximum possible groupings of adjacent ones are already shown in the figure.
 ```
 Developed by:NISHA.D
 RegisterNumber: 212223230143
-module SRFLIPFLOPUSINGCASE(q, q_bar, s,r, clk, reset);//SR Flip Flop Behavioral Level using ‘case’ 
+
+module SRFLIPFLOPUSINGCASE(q, q_bar, s,r, clk, reset);
   input s,r,clk, reset;
   output reg q;
   output q_bar;
@@ -61,10 +62,10 @@ module SRFLIPFLOPUSINGCASE(q, q_bar, s,r, clk, reset);//SR Flip Flop Behavioral 
     else 
   begin
       case({s,r})       
-	     2'b00: q <= q;    // No change
-		  2'b01: q <= 1'b0; // Write logic for reset
+	     2'b00: q <= q;   
+		  2'b01: q <= 1'b0; 
         2'b10: q <= 1'b1; // Write logic for set
-		  2'b11:	q <= 1'bx; // Write logic for Invalid state
+		  2'b11:	q <= 1'bx; 
       endcase
     end
   end
@@ -72,10 +73,12 @@ module SRFLIPFLOPUSINGCASE(q, q_bar, s,r, clk, reset);//SR Flip Flop Behavioral 
 endmodule
 ```
 **RTL LOGIC FOR FLIPFLOPS**
+
 ![image](https://github.com/Nishadayalan/SR-FLIPFLOP-USING-CASE/assets/144870468/14c9d350-14be-4455-b94b-cf3f1b006a05)
 
 
 **TIMING DIGRAMS FOR FLIP FLOPS**
+
 ![image](https://github.com/Nishadayalan/SR-FLIPFLOP-USING-CASE/assets/144870468/e578abce-ab5c-47c6-a779-e8860891467f)
 
 
